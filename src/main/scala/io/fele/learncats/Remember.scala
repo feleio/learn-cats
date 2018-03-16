@@ -9,10 +9,10 @@ import cats.instances.string._
 case class Remember[L, A](messages: List[L], v: A)
 
 object Remember extends App {
-  val a = implicitly[Monad[Writer[String, String]]]
-  println(a)
-
-  Writer[String, String]("a", "b").flatMap
+//  val a = implicitly[Monad[Writer[String, String]]]
+//  println(a)
+//
+//  Writer[String, String]("a", "b").flatMap
 //  implicit def rememberMonoid = new Monad[Remember] {
 //    override def pure[A](a: A) = Remember(Nil, a)
 //
